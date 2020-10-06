@@ -30,7 +30,7 @@ TEST(Task_1_2, Test) {
   EXPECT_EQ(3, v[3]);
 
   std::vector<int> v1 = {-1, -2, 3, 4};
-  multi_2(v1, -1);
+  reduce_a(v1, -1);
   EXPECT_EQ(-2, v1[0]);
   EXPECT_EQ(-3, v1[1]);
   EXPECT_EQ(2, v1[2]);
@@ -94,7 +94,7 @@ TEST(Task_2_5, Test) {
   EXPECT_EQ(1, mean(v1));
 }
 
-TEST(Task_2_5, Test) {
+TEST(Task_2_6, Test) {
   std::vector<int> v = {7, 2, 3, 4};
   EXPECT_EQ(4, mean_k(v, 0, 3));
 
