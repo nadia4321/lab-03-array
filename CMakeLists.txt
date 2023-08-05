@@ -40,8 +40,8 @@ add_library(${PROJECT_NAME} STATIC
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/task_4.cpp
 )
 
-add_executable(demo
-  ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp
+add_executable(sandbox
+  ${CMAKE_CURRENT_SOURCE_DIR}/sandbox/main.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
