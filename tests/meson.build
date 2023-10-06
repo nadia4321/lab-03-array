@@ -8,7 +8,8 @@ deps = [
 inc_dirs = [
   '../include',
 ]
-test_files = files('example.cpp')
+test_files = files('test.cpp',
+    'example.cpp')
 
 extraarg = []
 
