@@ -129,17 +129,22 @@ TEST(Task_4_1, Test) {
 
 // Task 4.
 TEST(Task_4_2, Test) {
-  std::vector<int> v = {1, 3, 4, 5, -1, 6, -1};
-  remove_last_even(v);
-  std::vector<int> ev = {1, 3, 4, 5, -1, -1};
-  EXPECT_EQ(ev, v);
+  std::vector<int> v1 = {1, 3, 4, 5, -1, 6, -1};
+  remove_last_even(v1);
+  std::vector<int> ev1_1 = {1, 3, 4, 5, -1, -1};
+  EXPECT_EQ(ev1_1, v1);
 
-  remove_last_even(v);
-  std::vector<int> ev1 = {1, 3, 5, -1, -1};
-  EXPECT_EQ(ev1, v);
+  remove_last_even(v1);
+  std::vector<int> ev1_2 = {1, 3, 5, -1, -1};
+  EXPECT_EQ(ev1_2, v1);
 
-  remove_last_even(v);
-  EXPECT_EQ(ev1, v);
+  remove_last_even(v1);
+  EXPECT_EQ(ev1_2, v1);
+
+  std::vector<int> v2 = {2, 1, 3, -5, -17, 47};
+  remove_last_even(v2);
+  std::vector<int> ev2 = {1, 3, -5, -17, 47};
+  EXPECT_EQ(ev2, v2);
 }
 
 // Task 5.
