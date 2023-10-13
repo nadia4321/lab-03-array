@@ -63,8 +63,9 @@ void add_stars(std::string& word) {
 // Task 10.
 int percent_of_a(const std::string& word) {
   int num_a = 0;
-  unsigned int len_word = word.length();
-  for (size_t i; i < len_word; ++i)
+  std::string letter = "a";
+  int len_word = word.size() / (letter.size());
+  for (int i; i < len_word; ++i)
     if (word[i] == 'a') num_a += 1;
   return num_a * 100 / len_word;
 }
